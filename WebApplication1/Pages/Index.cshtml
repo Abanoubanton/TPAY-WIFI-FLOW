@@ -1,0 +1,44 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="form-group">
+
+    <div class="content" style="align-content:center;">
+        <h1>TPAY – Subscription Flow V4.0</h1>
+        <form method="post">
+
+            <br />
+            <div class="field">
+                <span class="fa fa-user"></span>
+                <input class="form-control" type="text" required placeholder="Phone Number" name="msisdn" id="msisdn">
+
+            </div>
+            <div class="field">
+                <select class="form-control" name="operatorCode" id="operatorCode">
+                    <option value="60201">Orange</option>
+                    <option value="60202">Vodafone</option>
+                    <option value="60203">Etisalat</option>
+                </select>
+            </div>
+
+
+
+
+            <div class="field">
+                <input id="SubscribeRequest" type="submit" asp-page-handler="SubscribeRequest" value="Subscripe " />
+            </div>
+
+            
+
+
+
+        </form>
+        
+        <style></style>
+
+    </div>
+
+</div>

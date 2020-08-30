@@ -1,0 +1,20 @@
+﻿@page
+@model Welcome
+@{
+    ViewData["Title"] = "Merchant Page";
+}
+
+<h1>Merchant Welcome Page</h1>
+
+<form method="post">
+
+    <div class="field">
+        <input id="CancelSubscriptionContract" type="submit" asp-page-handler="CancelSubscriptionContract" value="Cancel existing subscription contract" />
+    </div>
+
+    <div class="field">
+        <input id="CancelSubscriptionContractpincode" type="submit" asp-page-handler="CancelSubscriptionContractpincode" value="Cancel existing subscription contract Using PINCODE" />
+    </div>
+
+    <br />
+</form>

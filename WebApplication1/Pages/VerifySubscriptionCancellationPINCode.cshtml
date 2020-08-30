@@ -1,0 +1,29 @@
+﻿@page
+@model VerifySubscriptionCancellationPINCode
+@{
+    ViewData["Title"] = "Verify Subscription Cancellation PINCode";
+}
+
+<div class="bg-img">
+
+    <div class="content">
+        <header>Verify Subscription Cancellation PINCODE</header>
+
+        <form method="post">
+
+            <div class="field">
+                <span class="fa fa-user"></span>
+                <input class='verifycode' type="text" required placeholder="Cancell PINCODE" name="verifycode" id="verifycode">
+
+            </div>
+
+            <br />
+            <div class="field">
+                <input id="VerifyCancellation" type="submit" asp-page-handler="VerifyCancellation" value="Verify Cancellation" />
+            </div>
+        </form>
+        <style></style>
+
+    </div>
+
+</div>

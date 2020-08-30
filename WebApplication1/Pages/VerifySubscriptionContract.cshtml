@@ -1,0 +1,29 @@
+﻿@page
+@model VerifySubscriptionContract
+@{
+    ViewData["Title"] = "Verify Subscription Contract";
+}
+
+<div>
+    <header>Enter Verification Code</header>
+    <form method="post">
+
+        <div>
+            <input type="text" required name="verifycode" id="verifycode">
+        </div>
+
+        <div>
+            <input type="submit" asp-page-handler="ResendVerification" value="Resend Verification Code" />
+        </div>
+        <h5><strong>@TempData["Message"]</strong></h5>
+
+
+        <br />
+        <div>
+            <input id="VerifyContract" type="submit" asp-page-handler="VerifyContract" value="VerifyContract " />
+        </div>
+
+
+    </form>
+
+</div>
